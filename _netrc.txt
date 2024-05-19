@@ -1,0 +1,6 @@
+machine api.heroku.com
+  login tokos@comto.sk
+  password 03091953-Tomo
+machine git.heroku.com
+  login tokos@comto.sk
+  password 03091953-Tomo
