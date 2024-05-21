@@ -1,251 +1,194 @@
 ==> Cloning from https://github.com/tokost/docker-django
-==> Checking out commit 318cfe9c01baed3ae04f1bc16e19c47a0d7a3b73 in branch main
+==> Checking out commit d27749160f64b43dfc0ea89db65e00f410618271 in branch main
 #1 [internal] load build definition from Dockerfile
-#1 transferring dockerfile: 1.05kB done
-#1 DONE 0.0s
+#1 transferring dockerfile: 1.11kB done
+#1 DONE 0.1s
 #2 [internal] load metadata for docker.io/library/python:3.8-alpine
 #2 ...
 #3 [auth] library/python:pull render-prod/docker-mirror-repository/library/python:pull token for us-west1-docker.pkg.dev
 #3 DONE 0.0s
 #2 [internal] load metadata for docker.io/library/python:3.8-alpine
-#2 DONE 5.9s
+#2 DONE 5.4s
 #4 [internal] load .dockerignore
 #4 transferring context: 2B done
-#4 DONE 0.7s
+#4 DONE 0.0s
 #5 [internal] load build context
-#5 transferring context: 1.89MB 0.0s done
-#5 DONE 3.1s
+#5 transferring context: 1.91MB 0.0s done
+#5 DONE 0.1s
 #6 [1/8] FROM docker.io/library/python:3.8-alpine@sha256:166faf3661e2b715e122d8203ce65a4e0f55e1bee11d8f10dc4751a2cecf5b9c
-#6 resolve docker.io/library/python:3.8-alpine@sha256:166faf3661e2b715e122d8203ce65a4e0f55e1bee11d8f10dc4751a2cecf5b9c 1.5s done
-#6 sha256:b4a226bd191c8ffe91f696b86c5dc580afd35381a853412c4b8dcdaf8f37ccb6 0B / 243B 0.2s
+#6 resolve docker.io/library/python:3.8-alpine@sha256:166faf3661e2b715e122d8203ce65a4e0f55e1bee11d8f10dc4751a2cecf5b9c 0.0s done
 #6 sha256:7a544be84aa7217086c0a54a9ad36dd68f02113ea4c3f05f34d05701451385dc 0B / 2.85MB 0.2s
+#6 sha256:b4a226bd191c8ffe91f696b86c5dc580afd35381a853412c4b8dcdaf8f37ccb6 0B / 243B 0.2s
 #6 sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7 0B / 11.36MB 0.2s
-#6 sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8 0B / 3.41MB 0.2s
-#6 sha256:b4a226bd191c8ffe91f696b86c5dc580afd35381a853412c4b8dcdaf8f37ccb6 243B / 243B 1.0s done
 #6 sha256:c3cdf40b8bda8e4ca4be0f5fa7f1d128907271efcbc72cbfc7c8b0f939ec25ea 0B / 619.60kB 0.2s
-#6 sha256:7a544be84aa7217086c0a54a9ad36dd68f02113ea4c3f05f34d05701451385dc 2.85MB / 2.85MB 2.7s
-#6 sha256:7a544be84aa7217086c0a54a9ad36dd68f02113ea4c3f05f34d05701451385dc 2.85MB / 2.85MB 2.8s done
-#6 sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8 2.10MB / 3.41MB 3.5s
-#6 sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8 3.41MB / 3.41MB 3.6s
-#6 sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8 3.41MB / 3.41MB 3.7s done
-#6 sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7 8.39MB / 11.36MB 4.1s
+#6 sha256:b4a226bd191c8ffe91f696b86c5dc580afd35381a853412c4b8dcdaf8f37ccb6 243B / 243B 1.0s done
+#6 sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8 0B / 3.41MB 0.2s
+#6 sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8 3.41MB / 3.41MB 1.8s done
 #6 extracting sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8
-#6 extracting sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8 0.5s done
-#6 sha256:c3cdf40b8bda8e4ca4be0f5fa7f1d128907271efcbc72cbfc7c8b0f939ec25ea 619.60kB / 619.60kB 4.0s done
+#6 sha256:7a544be84aa7217086c0a54a9ad36dd68f02113ea4c3f05f34d05701451385dc 2.85MB / 2.85MB 3.1s done
+#6 sha256:c3cdf40b8bda8e4ca4be0f5fa7f1d128907271efcbc72cbfc7c8b0f939ec25ea 619.60kB / 619.60kB 3.3s
+#6 extracting sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8 0.4s done
+#6 sha256:c3cdf40b8bda8e4ca4be0f5fa7f1d128907271efcbc72cbfc7c8b0f939ec25ea 619.60kB / 619.60kB 3.4s done
+#6 sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7 8.39MB / 11.36MB 3.6s
 #6 extracting sha256:c3cdf40b8bda8e4ca4be0f5fa7f1d128907271efcbc72cbfc7c8b0f939ec25ea
-#6 sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7 11.36MB / 11.36MB 5.3s
-#6 sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7 11.36MB / 11.36MB 5.4s done
-#6 extracting sha256:c3cdf40b8bda8e4ca4be0f5fa7f1d128907271efcbc72cbfc7c8b0f939ec25ea 18.4s done
-#6 extracting sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7
-#6 extracting sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7 0.6s done
-#6 extracting sha256:b4a226bd191c8ffe91f696b86c5dc580afd35381a853412c4b8dcdaf8f37ccb6 0.1s done
-#6 DONE 30.2s
+#6 sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7 11.36MB / 11.36MB 4.2s
+#6 sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7 11.36MB / 11.36MB 4.4s done
+#6 extracting sha256:c3cdf40b8bda8e4ca4be0f5fa7f1d128907271efcbc72cbfc7c8b0f939ec25ea 23.1s done
+#6 DONE 26.7s
 #6 [1/8] FROM docker.io/library/python:3.8-alpine@sha256:166faf3661e2b715e122d8203ce65a4e0f55e1bee11d8f10dc4751a2cecf5b9c
+#6 extracting sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7
+#6 extracting sha256:c82053526614f2845fa06a32b5d9c53963ef749c77b568b5b5f470d2aa8eeda7 2.8s done
+#6 DONE 29.6s
+#6 [1/8] FROM docker.io/library/python:3.8-alpine@sha256:166faf3661e2b715e122d8203ce65a4e0f55e1bee11d8f10dc4751a2cecf5b9c
+#6 extracting sha256:b4a226bd191c8ffe91f696b86c5dc580afd35381a853412c4b8dcdaf8f37ccb6 0.0s done
 #6 extracting sha256:7a544be84aa7217086c0a54a9ad36dd68f02113ea4c3f05f34d05701451385dc
-#6 extracting sha256:7a544be84aa7217086c0a54a9ad36dd68f02113ea4c3f05f34d05701451385dc 0.6s done
-#6 DONE 30.8s
+#6 extracting sha256:7a544be84aa7217086c0a54a9ad36dd68f02113ea4c3f05f34d05701451385dc 0.8s done
+#6 DONE 30.4s
 #7 [2/8] RUN mkdir /code
-#7 DONE 1.2s
+#7 DONE 5.6s
 #8 [3/8] WORKDIR /code
-#8 DONE 0.7s
-#9 [4/8] RUN apk update &&     apk add --virtual build-deps gcc python3-dev musl-dev &&     apk add postgresql-dev
-#9 0.065 fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/APKINDEX.tar.gz
-#9 0.158 fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/community/x86_64/APKINDEX.tar.gz
-#9 0.499 v3.19.1-568-g91908242c77 [https://dl-cdn.alpinelinux.org/alpine/v3.19/main]
-#9 0.499 v3.19.1-569-g07168d58875 [https://dl-cdn.alpinelinux.org/alpine/v3.19/community]
-#9 0.499 OK: 23001 distinct packages available
-#9 0.923 (1/21) Installing libgcc (13.2.1_git20231014-r0)
-#9 0.957 (2/21) Installing jansson (2.14-r4)
-#9 0.962 (3/21) Installing libstdc++ (13.2.1_git20231014-r0)
-#9 0.980 (4/21) Installing zstd-libs (1.5.5-r8)
-#9 0.993 (5/21) Installing binutils (2.41-r0)
-#9 1.060 (6/21) Installing libgomp (13.2.1_git20231014-r0)
-#9 1.065 (7/21) Installing libatomic (13.2.1_git20231014-r0)
-#9 1.068 (8/21) Installing gmp (6.3.0-r0)
-#9 1.073 (9/21) Installing isl26 (0.26-r1)
-#9 1.089 (10/21) Installing mpfr4 (4.2.1-r0)
-#9 1.096 (11/21) Installing mpc1 (1.3.1-r1)
-#9 1.101 (12/21) Installing gcc (13.2.1_git20231014-r0)
-#9 2.993 (13/21) Installing pkgconf (2.1.0-r0)
-#9 2.998 (14/21) Installing mpdecimal (2.5.1-r2)
-#9 3.001 (15/21) Installing python3 (3.11.9-r0)
-#9 3.259 (16/21) Installing python3-pycache-pyc0 (3.11.9-r0)
-#9 3.397 (17/21) Installing pyc (3.11.9-r0)
-#9 3.399 (18/21) Installing python3-pyc (3.11.9-r0)
-#9 3.402 (19/21) Installing python3-dev (3.11.9-r0)
-#9 3.842 (20/21) Installing musl-dev (1.2.4_git20230717-r4)
-#9 4.068 (21/21) Installing build-deps (20240519.170749)
-#9 4.068 Executing busybox-1.36.1-r15.trigger
-#9 4.077 OK: 271 MiB in 59 packages
-#9 4.438 (1/25) Upgrading libcrypto3 (3.1.4-r5 -> 3.1.4-r6)
-#9 4.496 (2/25) Upgrading libssl3 (3.1.4-r5 -> 3.1.4-r6)
-#9 4.502 (3/25) Installing libpq (16.3-r0)
-#9 4.558 (4/25) Installing openssl-dev (3.1.4-r6)
-#9 4.581 (5/25) Installing libpq-dev (16.3-r0)
-#9 4.595 (6/25) Installing libecpg (16.3-r0)
-#9 4.600 (7/25) Installing libecpg-dev (16.3-r0)
-#9 4.610 (8/25) Installing fortify-headers (1.1-r3)
-#9 4.613 (9/25) Installing clang15-headers (15.0.7-r18)
-#9 4.661 (10/25) Installing libxml2 (2.11.8-r0)
-#9 4.675 (11/25) Installing llvm15-libs (15.0.7-r12)
-#9 4.438 (1/25) Upgrading libcrypto3 (3.1.4-r5 -> 3.1.4-r6)
-#9 4.496 (2/25) Upgrading libssl3 (3.1.4-r5 -> 3.1.4-r6)
-#9 4.502 (3/25) Installing libpq (16.3-r0)
-#9 4.558 (4/25) Installing openssl-dev (3.1.4-r6)
-#9 4.581 (5/25) Installing libpq-dev (16.3-r0)
-#9 4.595 (6/25) Installing libecpg (16.3-r0)
-#9 4.600 (7/25) Installing libecpg-dev (16.3-r0)
-#9 4.610 (8/25) Installing fortify-headers (1.1-r3)
-#9 4.613 (9/25) Installing clang15-headers (15.0.7-r18)
-#9 4.661 (10/25) Installing libxml2 (2.11.8-r0)
-#9 4.675 (11/25) Installing llvm15-libs (15.0.7-r12)
-#9 5.301 (12/25) Installing clang15-libs (15.0.7-r18)
-#9 5.616 (13/25) Installing libstdc++-dev (13.2.1_git20231014-r0)
-#9 5.798 (14/25) Installing clang15-libclang (15.0.7-r18)
-#9 6.029 (15/25) Installing clang15 (15.0.7-r18)
-#9 6.223 (16/25) Installing icu-data-en (74.1-r0)
-#9 6.242 Executing icu-data-en-74.1-r0.post-install
-#9 6.245 *
-#9 6.245 * If you need ICU with non-English locales and legacy charset support, install
-#9 6.245 * package icu-data-full.
-#9 6.245 *
-#9 6.246 (17/25) Installing icu-libs (74.1-r0)
-#9 6.277 (18/25) Installing icu (74.1-r0)
-#9 6.288 (19/25) Installing icu-dev (74.1-r0)
-#9 6.341 (20/25) Installing llvm15 (15.0.7-r12)
-#9 6.910 (21/25) Installing lz4-libs (1.9.4-r5)
-#9 6.916 (22/25) Installing lz4-dev (1.9.4-r5)
-#9 6.921 (23/25) Installing zstd (1.5.5-r8)
-#9 6.927 (24/25) Installing zstd-dev (1.5.5-r8)
-#9 6.932 (25/25) Installing postgresql16-dev (16.3-r0)
-#9 7.141 Executing busybox-1.36.1-r15.trigger
-#9 7.146 Executing ca-certificates-20230506-r0.trigger
-#9 7.200 OK: 636 MiB in 82 packages
-#9 DONE 27.7s
+#8 DONE 7.7s
+#9 [4/8] RUN apk update &&     apk add --no-cache     gcc     python3-dev     musl-dev     postgresql-dev     libffi-dev     openssl-dev     build-base
+#9 0.082 fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/APKINDEX.tar.gz
+#9 0.183 fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/community/x86_64/APKINDEX.tar.gz
+#9 0.480 v3.19.1-576-g45431cb9504 [https://dl-cdn.alpinelinux.org/alpine/v3.19/main]
+#9 0.480 v3.19.1-575-gd679707d49e [https://dl-cdn.alpinelinux.org/alpine/v3.19/community]
+#9 0.480 OK: 23039 distinct packages available
+#9 0.547 fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/APKINDEX.tar.gz
+#9 0.641 fetch https://dl-cdn.alpinelinux.org/alpine/v3.19/community/x86_64/APKINDEX.tar.gz
+#9 1.001 (1/54) Upgrading libcrypto3 (3.1.4-r5 -> 3.1.5-r0)
+#9 1.039 (2/54) Upgrading libssl3 (3.1.4-r5 -> 3.1.5-r0)
+#9 1.048 (3/54) Installing libgcc (13.2.1_git20231014-r0)
+#9 1.053 (4/54) Installing jansson (2.14-r4)
+#9 1.059 (5/54) Installing libstdc++ (13.2.1_git20231014-r0)
+#9 1.077 (6/54) Installing zstd-libs (1.5.5-r8)
+#9 1.086 (7/54) Installing binutils (2.41-r0)
+#9 1.165 (8/54) Installing libmagic (5.45-r1)
+#9 1.191 (9/54) Installing file (5.45-r1)
+#9 1.194 (10/54) Installing libgomp (13.2.1_git20231014-r0)
+#9 1.198 (11/54) Installing libatomic (13.2.1_git20231014-r0)
+#9 1.201 (12/54) Installing gmp (6.3.0-r0)
+#9 1.207 (13/54) Installing isl26 (0.26-r1)
+#9 1.228 (14/54) Installing mpfr4 (4.2.1-r0)
+#9 1.233 (15/54) Installing mpc1 (1.3.1-r1)
+#9 1.236 (16/54) Installing gcc (13.2.1_git20231014-r0)
+#9 2.234 (17/54) Installing libstdc++-dev (13.2.1_git20231014-r0)
+#9 2.434 (18/54) Installing musl-dev (1.2.4_git20230717-r4)
+#9 2.522 (19/54) Installing libc-dev (0.7.2-r5)
+#9 2.522 (20/54) Installing g++ (13.2.1_git20231014-r0)
+#9 3.064 (21/54) Installing make (4.4.1-r2)
+#9 3.068 (22/54) Installing fortify-headers (1.1-r3)
+#9 3.072 (23/54) Installing patch (2.7.6-r10)
+#9 3.076 (24/54) Installing build-base (0.5-r3)
+#9 3.078 (25/54) Installing linux-headers (6.5-r0)
+#9 3.231 (26/54) Installing pkgconf (2.1.0-r0)
+#9 3.238 (27/54) Installing libffi-dev (3.4.4-r3)
+#9 3.246 (28/54) Installing openssl-dev (3.1.5-r0)
+#9 3.273 (29/54) Installing libpq (16.3-r0)
+#9 3.279 (30/54) Installing libpq-dev (16.3-r0)
+#9 3.295 (31/54) Installing libecpg (16.3-r0)
+#9 3.299 (32/54) Installing libecpg-dev (16.3-r0)
+#9 3.313 (33/54) Installing clang15-headers (15.0.7-r18)
+#9 3.380 (34/54) Installing libxml2 (2.11.8-r0)
+#9 3.403 (35/54) Installing llvm15-libs (15.0.7-r12)
+#9 4.206 (36/54) Installing clang15-libs (15.0.7-r18)
+#9 4.601 (37/54) Installing clang15-libclang (15.0.7-r18)
+#9 4.812 (38/54) Installing clang15 (15.0.7-r18)
+#9 5.037 (39/54) Installing icu-data-en (74.1-r0)
+#9 5.062 Executing icu-data-en-74.1-r0.post-install
+#9 5.063 (40/54) Installing icu-libs (74.1-r0)
+#9 5.063 *
+#9 5.063 * If you need ICU with non-English locales and legacy charset support, install
+#9 5.063 * package icu-data-full.
+#9 5.063 *
+#9 5.098 (41/54) Installing icu (74.1-r0)
+#9 5.109 (42/54) Installing icu-dev (74.1-r0)
+#9 5.166 (43/54) Installing llvm15 (15.0.7-r12)
+#9 5.675 (44/54) Installing lz4-libs (1.9.4-r5)
+#9 5.678 (45/54) Installing lz4-dev (1.9.4-r5)
+#9 5.682 (46/54) Installing zstd (1.5.5-r8)
+#9 5.687 (47/54) Installing zstd-dev (1.5.5-r8)
+#9 5.696 (48/54) Installing postgresql16-dev (16.3-r0)
+#9 5.849 (49/54) Installing mpdecimal (2.5.1-r2)
+#9 5.854 (50/54) Installing python3 (3.11.9-r0)
+#9 6.110 (51/54) Installing python3-pycache-pyc0 (3.11.9-r0)
+#9 6.295 (52/54) Installing pyc (3.11.9-r0)
+#9 6.297 (53/54) Installing python3-pyc (3.11.9-r0)
+#9 6.299 (54/54) Installing python3-dev (3.11.9-r0)
+#9 6.687 Executing busybox-1.36.1-r15.trigger
+#9 6.696 Executing ca-certificates-20230506-r0.trigger
+#9 6.759 OK: 689 MiB in 90 packages
+#9 DONE 25.4s
 #10 [5/8] COPY requirements.txt /code/
-#10 DONE 0.2s
-#11 [6/8] RUN pip install -r requirements.txt
-#11 2.315 Collecting Django>=2.1
-#11 2.367   Downloading Django-4.2.13-py3-none-any.whl (8.0 MB)
-#11 2.682      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 25.5 MB/s eta 0:00:00
-#11 2.975 Collecting psycopg2-binary
-#11 2.979   Downloading psycopg2_binary-2.9.9-cp38-cp38-musllinux_1_1_x86_64.whl (2.5 MB)
-#11 3.310      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 7.5 MB/s eta 0:00:00
-#11 3.412 Collecting python-dotenv
-#11 3.416   Downloading python_dotenv-1.0.1-py3-none-any.whl (19 kB)
-#11 3.675 Collecting python-decouple
-#11 3.678   Downloading python_decouple-3.8-py3-none-any.whl (9.9 kB)
-#11 3.861 Collecting sqlparse>=0.3.1
-#11 3.864   Downloading sqlparse-0.5.0-py3-none-any.whl (43 kB)
-#11 4.125      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 kB 130.2 kB/s eta 0:00:00
-#11 4.169 Collecting asgiref<4,>=3.6.0
-#11 4.178   Downloading asgiref-3.8.1-py3-none-any.whl (23 kB)
-#11 4.262 Collecting backports.zoneinfo
-#11 4.271   Downloading backports.zoneinfo-0.2.1.tar.gz (74 kB)
-#11 4.336      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.1/74.1 kB 1.0 MB/s eta 0:00:00
-#11 4.436   Installing build dependencies: started
-#11 6.491   Installing build dependencies: finished with status 'done'
-#11 6.492   Getting requirements to build wheel: started
-#11 6.727   Getting requirements to build wheel: finished with status 'done'
-#11 6.731   Preparing metadata (pyproject.toml): started
-#11 6.989   Preparing metadata (pyproject.toml): finished with status 'done'
-#11 7.040 Collecting typing-extensions>=4
-#11 7.045   Downloading typing_extensions-4.11.0-py3-none-any.whl (34 kB)
-#11 7.067 Building wheels for collected packages: backports.zoneinfo
-#11 7.068   Building wheel for backports.zoneinfo (pyproject.toml): started
-#11 8.455   Building wheel for backports.zoneinfo (pyproject.toml): finished with status 'done'
-#11 8.456   Created wheel for backports.zoneinfo: filename=backports.zoneinfo-0.2.1-cp38-cp38-linux_x86_64.whl size=83120 sha256=07446eeb57da25b7070eca90bbf33f08c121803fa661c7d429a9bc060ce5b6ce
-#11 8.456   Stored in directory: /root/.cache/pip/wheels/c7/de/cc/c405827ed64f81b56142f1e0075a970b2731b00d21983d54fb
-#11 8.459 Successfully built backports.zoneinfo
-#11 8.531 Installing collected packages: python-decouple, typing-extensions, sqlparse, python-dotenv, psycopg2-binary, backports.zoneinfo, asgiref, Django
-#11 11.82 Successfully installed Django-4.2.13 asgiref-3.8.1 backports.zoneinfo-0.2.1 psycopg2-binary-2.9.9 python-decouple-3.8 python-dotenv-1.0.1 sqlparse-0.5.0 typing-extensions-4.11.0
-#11 11.82 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
-#11 11.82 
-#11 11.82 [notice] A new release of pip is available: 23.0.1 -> 24.0
-#11 11.82 [notice] To update, run: pip install --upgrade pip
-#11 DONE 19.5s
+#10 DONE 0.1s
+#11 [6/8] RUN pip install --no-cache-dir -r requirements.txt
+#11 1.976 Collecting Django>=2.1
+#11 2.014   Downloading Django-4.2.13-py3-none-any.whl (8.0 MB)
+#11 2.095      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 103.6 MB/s eta 0:00:00
+#11 2.231 Collecting psycopg2-binary
+#11 2.237   Downloading psycopg2_binary-2.9.9-cp38-cp38-musllinux_1_1_x86_64.whl (2.5 MB)
+#11 2.261      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 122.8 MB/s eta 0:00:00
+#11 2.286 Collecting python-dotenv
+#11 2.290   Downloading python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+#11 2.301 Collecting python-decouple
+#11 2.305   Downloading python_decouple-3.8-py3-none-any.whl (9.9 kB)
+#11 2.334 Collecting gunicorn
+#11 2.339   Downloading gunicorn-22.0.0-py3-none-any.whl (84 kB)
+#11 2.343      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.4/84.4 kB 101.1 MB/s eta 0:00:00
+#11 2.377 Collecting asgiref<4,>=3.6.0
+#11 2.381   Downloading asgiref-3.8.1-py3-none-any.whl (23 kB)
+#11 2.394 Collecting backports.zoneinfo
+#11 2.399   Downloading backports.zoneinfo-0.2.1.tar.gz (74 kB)
+#11 2.402      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.1/74.1 kB 123.3 MB/s eta 0:00:00
+#11 2.432   Installing build dependencies: started
+#11 4.497   Installing build dependencies: finished with status 'done'
+#11 4.498   Getting requirements to build wheel: started
+#11 4.958   Getting requirements to build wheel: finished with status 'done'
+#11 5.041   Preparing metadata (pyproject.toml): started
+#11 5.331   Preparing metadata (pyproject.toml): finished with status 'done'
+#11 5.351 Collecting sqlparse>=0.3.1
+#11 5.355   Downloading sqlparse-0.5.0-py3-none-any.whl (43 kB)
+#11 5.358      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 kB 94.3 MB/s eta 0:00:00
+#11 5.413 Collecting packaging
+#11 5.417   Downloading packaging-24.0-py3-none-any.whl (53 kB)
+#11 5.421      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.5/53.5 kB 112.1 MB/s eta 0:00:00
+#11 5.456 Collecting typing-extensions>=4
+#11 5.475   Downloading typing_extensions-4.11.0-py3-none-any.whl (34 kB)
+#11 5.488 Building wheels for collected packages: backports.zoneinfo
+#11 5.489   Building wheel for backports.zoneinfo (pyproject.toml): started
+#11 6.878   Building wheel for backports.zoneinfo (pyproject.toml): finished with status 'done'
+#11 6.880   Created wheel for backports.zoneinfo: filename=backports.zoneinfo-0.2.1-cp38-cp38-linux_x86_64.whl size=83119 sha256=8eedc90468c1eccc96d9fd0dfb288ab3122320a9c23fc16ee7e94aeed10a8e9f
+#11 6.880   Stored in directory: /tmp/pip-ephem-wheel-cache-t5m49f90/wheels/c7/de/cc/c405827ed64f81b56142f1e0075a970b2731b00d21983d54fb
+#11 6.883 Successfully built backports.zoneinfo
+#11 6.965 Installing collected packages: python-decouple, typing-extensions, sqlparse, python-dotenv, psycopg2-binary, packaging, backports.zoneinfo, gunicorn, asgiref, Django
+#11 9.642 Successfully installed Django-4.2.13 asgiref-3.8.1 backports.zoneinfo-0.2.1 gunicorn-22.0.0 packaging-24.0 psycopg2-binary-2.9.9 python-decouple-3.8 python-dotenv-1.0.1 sqlparse-0.5.0 typing-extensions-4.11.0
+#11 9.642 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#11 9.766 
+#11 9.766 [notice] A new release of pip is available: 23.0.1 -> 24.0
+#11 9.766 [notice] To update, run: pip install --upgrade pip
+#11 DONE 10.2s
 #12 [7/8] COPY .env /code/.env
-#12 DONE 0.2s
+#12 DONE 0.3s
 #13 [8/8] ADD ./ /code/
-#13 DONE 0.1s
+#13 DONE 0.2s
 #14 exporting to docker image format
 #14 exporting layers
-#14 exporting layers 24.4s done
-#14 exporting manifest sha256:7ae9e66ac21a3c0ff782ffdfbb37526b6171112b895c666ed626daf17cf3cb34 0.1s done
-#14 exporting config sha256:6fbc9adb79a0a611ff5cfdce323a4f7cbe98f7c3663a0cacb4d9b9f420c8b5dc
-#14 exporting config sha256:6fbc9adb79a0a611ff5cfdce323a4f7cbe98f7c3663a0cacb4d9b9f420c8b5dc 0.1s done
-#14 DONE 27.7s
+#14 exporting layers 29.1s done
+#14 exporting manifest sha256:77555b503ec4258a58e592e1563491364bf78dbe3e47e0331bf3c60234e0c993 0.0s done
+#14 exporting config sha256:4242fe895c4bb894d1ba264b348f8b78895e9851f9fc35b47a0d85446c1df43b 0.0s done
+#14 DONE 32.6s
 #15 exporting cache to client directory
 #15 preparing build cache for export
-#15 writing cache manifest sha256:da3543676ab46c4f231e68b785834fcce1fa72cf9fb7a75f5415df3fc5e9b93f 0.0s done
-#15 DONE 11.2s
+#15 writing cache manifest sha256:6d2ffeacba24f10e7aaaedb0d1f7724527654856fd9970c47a13ca67ce11e65d done
+#15 DONE 4.4s
 Pushing image to registry...
 Upload succeeded
 DONE
 ==> Deploying...
-Exception in thread django-main-thread:
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
-    self.connect()
-  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
-    return func(*args, **kwargs)
-  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 270, in connect
-    self.connection = self.get_new_connection(conn_params)
-  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
-    return func(*args, **kwargs)
-  File "/usr/local/lib/python3.8/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
-    connection = self.Database.connect(**conn_params)
-  File "/usr/local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
-    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
-psycopg2.OperationalError: could not translate host name "db" to address: Name does not resolve
-The above exception was the direct cause of the following exception:
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/threading.py", line 932, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.8/threading.py", line 870, in run
-    self._target(*self._args, **self._kwargs)
-  File "/usr/local/lib/python3.8/site-packages/django/utils/autoreload.py", line 64, in wrapper
-    fn(*args, **kwargs)
-  File "/usr/local/lib/python3.8/site-packages/django/core/management/commands/runserver.py", line 136, in inner_run
-    self.check_migrations()
-  File "/usr/local/lib/python3.8/site-packages/django/core/management/base.py", line 574, in check_migrations
-    executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
-  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/executor.py", line 18, in __init__
-    self.loader = MigrationLoader(self.connection)
-  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/loader.py", line 58, in __init__
-    self.build_graph()
-  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/loader.py", line 235, in build_graph
-    self.applied_migrations = recorder.applied_migrations()
-  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/recorder.py", line 81, in applied_migrations
-    if self.has_table():
-  File "/usr/local/lib/python3.8/site-packages/django/db/migrations/recorder.py", line 57, in has_table
-    with self.connection.cursor() as cursor:
-  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
-    return func(*args, **kwargs)
-  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 330, in cursor
-    return self._cursor()
-  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 306, in _cursor
-    self.ensure_connection()
-  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
-    return func(*args, **kwargs)
-  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
-    self.connect()
-  File "/usr/local/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
-    raise dj_exc_value.with_traceback(traceback) from exc_value
-  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 289, in ensure_connection
-    self.connect()
-  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
-    return func(*args, **kwargs)
-  File "/usr/local/lib/python3.8/site-packages/django/db/backends/base/base.py", line 270, in connect
-    self.connection = self.get_new_connection(conn_params)
-  File "/usr/local/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
-    return func(*args, **kwargs)
-  File "/usr/local/lib/python3.8/site-packages/django/db/backends/postgresql/base.py", line 275, in get_new_connection
-    connection = self.Database.connect(**conn_params)
-  File "/usr/local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
-    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
-django.db.utils.OperationalError: could not translate host name "db" to address: Name does not resolve
-==> No open ports detected, continuing to scan...
-==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
-==> No open ports detected, continuing to scan...
-==> Docs on specifying a port: https://render.com/docs/web-services#port-binding
+[2024-05-21 08:42:31 +0000] [1] [INFO] Starting gunicorn 22.0.0
+[2024-05-21 08:42:31 +0000] [1] [INFO] Listening at: http://0.0.0.0:8000 (1)
+[2024-05-21 08:42:31 +0000] [1] [INFO] Using worker: sync
+[2024-05-21 08:42:31 +0000] [24] [INFO] Booting worker with pid: 24
+==> Your service is live 🎉
+==> Detected a new open port HTTP:8000
+==> Detected a new open port HTTP:8000

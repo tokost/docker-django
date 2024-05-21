@@ -41,7 +41,9 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 # ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
 ##ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
 ###ALLOWED_HOSTS = [WEB_HOST, 'localhost']
-ALLOWED_HOSTS = [config('WEB_HOST', default='localhost'), 'localhost']
+####ALLOWED_HOSTS = [config('WEB_HOST', default='localhost'), 'localhost']
+ALLOWED_HOSTS = ['docker-django-3.onrender.com', 'localhost', '127.0.0.1']
+
 
 # Application definition
 
