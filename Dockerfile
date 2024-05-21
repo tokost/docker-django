@@ -5,15 +5,21 @@ FROM python:3.8-alpine
 RUN mkdir /code
 WORKDIR /code
 
-# Install system dependencies
+# Install system dependencies and keep them for the entire build process
 RUN apk update && \
-    apk add --virtual build-deps gcc python3-dev musl-dev && \
-    apk add postgresql-dev
+    apk add --no-cache \
+    gcc \
+    python3-dev \
+    musl-dev \
+    postgresql-dev \
+    libffi-dev \
+    openssl-dev \
+    build-base
 
 # Install Python dependencies
 COPY requirements.txt /code/
 ##RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Ensure the .env file is copied
 COPY .env /code/.env
@@ -30,7 +36,8 @@ ENV NAME World
 
 # Run the application
 ##CMD ["python", "manage.py", "runserver", "0.0.0.0:8001"]
-CMD ["sh", "-c", "python manage.py runserver 0.0.0.0:$PORT && gunicorn mysite.wsgi:application --bind 0.0.0.0:$PORT"]
+CMD ["sh", "-c", "gunicorn mysite.wsgi:application --bind 0.0.0.0:$PORT"]
+
 
 # Update package lists and install Python
 ##RUN apk update && apk add --no-cache python3

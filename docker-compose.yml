@@ -3,21 +3,24 @@ version: '3'
 services:
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:&PORT && gunicorn mysite.wsgi:application --bind 0.0.0.0:$PORT
+    command: sh -c "gunicorn mysite.wsgi:application --bind 0.0.0.0:8000"
     ports:
-      - "${PORT}:${PORT}" # miesto 8001 dat kvoli Render $PORT
-  
+      - "8000:8000" # Render environment variable for the port
     env_file:
       - .env  # Use .env file
     depends_on:
       - db
     environment:
-      - ALLOWED_HOSTS=localhost,127.0.0.1
+      - ALLOWED_HOSTS=localhost,127.0.0.1, web
       - DEBUG=False
       - DJANGO_DB_HOST=db
-      - PORT=8001  # This will be overridden by Render
-    volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - PORT=8000  # This will be overridden by Render
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/postgres
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
     networks:
       - backend
 
@@ -55,14 +58,16 @@ services:
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - static:/code/static  # pridane kvoli statickym suborom
+    depends_on:
+      - web
     networks:
-      - backend    
+      - backend
 
 networks:
   backend:
-    driver: bridge
 
 volumes:
   postgres_data:
   pgadmin_data:
+  static:
 
